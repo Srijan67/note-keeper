@@ -1,13 +1,66 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap");
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: "Krub", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  background-color: yellow;
+  font-size: 2rem;
+  padding-left: 1rem;
+  height: 10vh;
+  line-height: 2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.noteArea {
+  margin: 30px 40%;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid yellow;
+  border-radius: 0.5rem;
+}
+
+input,
+textarea {
+  font-size: 1.5rem;
+  outline: none;
+
+  border: 2px solid transparent;
+  width: 20vw;
+  padding: 0.5rem;
+  outline: "off";
+}
+textarea {
+  box-shadow: 0px -1px 2px black;
+  font-size: 1.1rem;
+}
+.displayArea {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+}
+.displayArea div {
+  background-color: grey;
+  padding: 5%;
+  border-radius: 1.4rem;
+  border: 5px solid yellow;
+  overflow: hidden;
+}
+.displayArea div h3 {
+  border-bottom: 2px solid yellow;
+  padding-bottom: 0.5rem;
+}
+.displayArea div p {
+  margin-top: 1rem;
+}
+.trash {
+  margin-left: 90%;
+  color: red;
 }
